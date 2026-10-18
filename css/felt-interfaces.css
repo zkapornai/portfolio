@@ -1,0 +1,70 @@
+/* Felt Interfaces project page */
+.back {
+	display: inline-block;
+	margin-bottom: 24px;
+	color: var(--mut);
+	font-weight: 500;
+}
+
+.back:hover {
+	color: var(--ink);
+}
+
+.lg {
+	font: 600 clamp(1.4rem, 2.6vw, 2.1rem)/1.2 'Outfit', sans-serif;
+	letter-spacing: -.02em;
+	color: var(--ink);
+	max-width: 22em;
+	margin-top: clamp(24px, 5vh, 48px);
+}
+
+.stage {
+	position: relative;
+	height: clamp(380px, 64vh, 660px);
+	margin-top: clamp(28px, 5vh, 56px);
+	border-radius: 24px;
+	overflow: hidden;
+	border: 1px solid var(--line);
+	background: #fff;
+}
+
+.picker {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 16px;
+}
+
+.picker .btn {
+	border: 0;
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+	padding: 11px 18px;
+}
+
+.note {
+	margin-top: 20px;
+	max-width: 56ch;
+}
+
+.cols {
+	display: flex;
+	gap: clamp(32px, 6vw, 80px);
+	margin-top: 48px;
+	flex-wrap: wrap;
+}
+
+.cols h4 {
+	font-size: .95rem;
+	margin-bottom: 8px;
+}
+
+.cols ul {
+	padding: 0;
+}
+
+.cols li {
+	list-style: none;
+	color: var(--mut);
+}

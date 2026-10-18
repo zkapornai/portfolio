@@ -1,0 +1,8 @@
+/* Triangle bumps (js/bumps.js): the playable game on the Felt Interfaces project page */
+.demo{position:absolute;inset:0;background:#fff}
+.demo canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.demo .ball{position:absolute;left:0;top:0;border-radius:50%;background:var(--g);box-shadow:0 0 0 2px #fff;will-change:transform}
+.demo.game .ball{cursor:grab;touch-action:none}
+.demo.game .ball::before{content:"";position:absolute;inset:-12px;border-radius:50%}
+.demo.game .ball.dragging{cursor:grabbing}
+.demo .hint{position:absolute;left:0;top:0;font-size:.75rem;font-weight:600;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 0 0 1px var(--line);pointer-events:none;white-space:nowrap}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+		<meta name="color-scheme" content="light">
+		<meta name="theme-color" content="#ffffff">
+		<title>Linear to Circular – Zsigmond Kapornai</title>
+		<meta name="description" content="A quick-and-dirty mechanical prototype converting circular motion into linear movement.">
+		<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Outfit:wght@600;800&display=swap">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/project.css">
+	</head>
+	<body>
+		<header>
+			<nav aria-label="Main">
+				<a class="brand" href="index.html">Zsigmond Kapornai</a>
+				<ul>
+					<li><a href="projects.html" aria-current="page">Projects</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="project-cover" aria-label="Project cover">
+				<img src="Linertocircular/LTC23.jpeg" alt="" fetchpriority="high">
+				
+				<div class="project-head cover-copy">
+				<h1 class="project-title">Linear to Circular</h1>
+				<p class="project-lead">A quick-and-dirty mechanical prototype linking rotary levers to a slider, converting circular motion into linear movement.</p>
+			</div>
+			
+				<ul class="cover-roles" aria-label="Project disciplines">
+					<li>Mechanical design</li>
+					<li>3D modelling</li>
+					<li>3D printing</li>
+					<li>Prototyping</li>
+				</ul>
+			</section>
+			<article class="project-story">
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">01-02 / First ideas · Motion study</p>
+						<h2>Sketch the movement</h2>
+						<p>This was the toughest project so far in the 2025 Design Challenges. Every small part and larger element went through at least ten versions before the mechanism began to make sense. I started by sketching how a rod could move and how a rotary lever might drive a slider, before working out the mechanism in 3D.</p>
+						<h3>Follow the rod's path</h3>
+						<p>Sketching the rod movement helped define how rotation could be transferred to a part moving along a straight path.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC1.jpeg" alt="Early sketches for the circular-to-linear mechanism" loading="lazy">
+							<figcaption>Sketches.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC2.jpeg" alt="Sketching the movement of the rod" loading="lazy">
+							<figcaption>Sketching rod movement.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">03-04 / Early geometry · Connections</p>
+						<h2>Try a first shape</h2>
+						<p>The first digital shape was a starting point for exploring the fundamental parts and how they might fit together.</p>
+						<h3>Work out how the parts meet</h3>
+						<p>The squares and their connections began to define a case for the mechanism and the joints needed for movement.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC3.png" alt="First shape study for the mechanism" loading="lazy">
+							<figcaption>First try shape.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC4.png" alt="Square forms and connections in the mechanism study" loading="lazy">
+							<figcaption>Squares, connections.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">05-06 / Core parts · Assembly view</p>
+						<h2>Build the fundamental assembly</h2>
+						<p>The setup takes shape around a case, a long rod and a moving square. Each part needed to work together as the rotary levers drove the sliding piece.</p>
+						<h3>Inspect the mechanism in 3D</h3>
+						<p>Viewing the parts together from different angles helped make their spacing and interaction clearer before fabrication.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC5.png" alt="The fundamental square, rod and moving square" loading="lazy">
+							<figcaption>The fundamental square, rod, moving square.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC6.png" alt="The mechanism viewed from another angle" loading="lazy">
+							<figcaption>From different view.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">07-08 / Linked rods · Check clearances</p>
+						<h2>Connect both sides</h2>
+						<p>A pair of rotary levers on both sides are linked to create circular motion, then connected to the slider to turn that rotation into linear movement.</p>
+						<h3>Look from another angle</h3>
+						<p>Another viewpoint helped check how the levers, rods and supports sat in relation to each other across the assembly.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC7.png" alt="Both rods shown with the movement workflow" loading="lazy">
+							<figcaption>Both rod, showing the movement workflow.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC8.png" alt="The linked mechanism from another viewpoint" loading="lazy">
+							<figcaption>From other viewpoint.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">09-10 / Joint detail · Fabrication</p>
+						<h2>Connect the rods and holder</h2>
+						<p>The cylindrical connector joins the rods to their holder. The joints needed revision so the lever could rotate without being blocked.</p>
+						<h3>Prepare the parts for printing</h3>
+						<p>Once the assembly had a workable form, I prepared its components for 3D printing so they could be tested physically.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC9.png" alt="Cylinder used to connect the rods and holder" loading="lazy">
+							<figcaption>The cylinder to connect the rods and holder.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC10.png" alt="The mechanism prepared for 3D printing" loading="lazy">
+							<figcaption>Preparation for printing.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">11-12 / Printing · Fabricate</p>
+						<h2>Build the first parts</h2>
+						<p>The first printed components included supporting material as the complex parts took shape layer by layer.</p>
+						<h3>Let the print run</h3>
+						<p>The printing stage turned the digital components into parts that could be assembled, handled and evaluated.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC11.jpeg" alt="3D printing with supporting material" loading="lazy">
+							<figcaption>Printing supporting material.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC12.jpeg" alt="The mechanism components being printed" loading="lazy">
+							<figcaption>Printing.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">13-14 / Printing progress · Printed parts</p>
+						<h2>Wait for the parts to finish</h2>
+						<p>As the print neared completion, the mechanism's individual elements became tangible and ready for assembly.</p>
+						<h3>Inspect the result</h3>
+						<p>Looking over the print from another perspective helped check the parts before testing the movement.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC13.jpeg" alt="The 3D print almost complete" loading="lazy">
+							<figcaption>Printing is almost done.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC14.jpeg" alt="The printed components from another perspective" loading="lazy">
+							<figcaption>From other perspective.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">15-16 / First print complete · Review</p>
+						<h2>Bring the parts off the printer</h2>
+						<p>The completed print made it possible to move from checking the geometry on screen to testing a physical mechanism.</p>
+						<h3>Check the components from all sides</h3>
+						<p>A further view of the finished print helped assess how the pieces could fit together in the complete mechanism.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC15.jpeg" alt="The completed 3D print" loading="lazy">
+							<figcaption>Done print.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC16.jpeg" alt="The finished printed parts from another view" loading="lazy">
+							<figcaption>From other view.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">17-18 / First fit · Troubleshoot</p>
+						<h2>Test the printed pieces</h2>
+						<p>The first test pieces exposed issues that were hard to predict in the digital model, making hands-on assembly essential.</p>
+						<h3>Remove the rotation block</h3>
+						<p>The lever holder blocked the larger lever, preventing the mechanism from rotating. I redesigned the joints and used holey and standard screws to improve movement and allow a full 360° turn.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC17.jpeg" alt="First printed items used as test pieces" loading="lazy">
+							<figcaption>First printed items test pieces.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC18.png" alt="Fixing rotation problems and other minor errors" loading="lazy">
+							<figcaption>Starting fixing the issues with rotation and other minor errors.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">19-20 / Iterate · Improve the joints</p>
+						<h2>Test the rods again</h2>
+						<p>Another assembly test still showed issues. The first two full attempts did not work, so the parts went through repeated redesign and adjustment before the movement made sense.</p>
+						<h3>Give the rods room to move</h3>
+						<p>Printed screws were added between the rods to improve the connections and help the mechanism move more smoothly.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC19.jpeg" alt="The mechanism tested again with rods, with some issues remaining" loading="lazy">
+							<figcaption>Lego again with the rods, still have some issues.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC20.jpeg" alt="Printed screws for the spaces between the rods" loading="lazy">
+							<figcaption>Printed some screws for places between rods.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">21-22 / Final assembly · Components</p>
+						<h2>Put the complete mechanism together</h2>
+						<p>After many versions of each part, the final assembly brought the case, rods, rotary levers and sliding element together.</p>
+						<h3>Gather what makes it work</h3>
+						<p>The parts shown together make clear how the separate printed pieces and connections form the working assembly.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC21.png" alt="The final assembled mechanism" loading="lazy">
+							<figcaption>Final product.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC22.png" alt="All the items needed to make the mechanism work" loading="lazy">
+							<figcaption>All items needed to make it work.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">23-24 / Working prototype · Simplify the view</p>
+						<h2>Test circular-to-linear movement</h2>
+						<p>The final mechanism performs the conversion it was designed for: linked levers create circular motion and drive the slider linearly. Kept simple, cheap and rough, it was still sturdy enough to run for more than ten minutes without failing.</p>
+						<h3>Show one side clearly</h3>
+						<p>I made the mechanism again with a single side rod to make its movement easier to see and understand.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC23.jpeg" alt="Working prototype converting circular movement into linear movement" loading="lazy">
+							<figcaption>Working prototype.</figcaption>
+						</figure>
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC24.png" alt="The mechanism shown with only one side rod for a clearer view" loading="lazy">
+							<figcaption>Made it again, with only one side rod for more clear view.</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="story-row story-group">
+					<div class="story-copy">
+						<p class="story-step">25-25 / Reflection</p>
+						<h2>Understand the mechanism through iteration</h2>
+						<p>I did not understand the mechanics at the beginning, and the first two complete attempts simply did not work. Testing, looking at examples, asking for help and paying attention to the movement helped the logic click. By the end I understood how to control the circular-to-linear motion and avoid blocking the mechanism. This quick-and-dirty prototype did what it needed to do, and taught me more than the smoother, easier assignments.</p>
+					</div>
+					<div class="story-images">
+						<figure class="story-figure">
+							<img src="Linertocircular/LTC25.jpg" alt="Using one rod to avoid errors caused by the two-rod setup" loading="lazy">
+							<figcaption>Using one side in the rod to avoid errors with two rods.</figcaption>
+						</figure>
+					</div>
+				</section>
+			</article>
+			<div class="wrap">
+				<a class="next-project" href="cylinder.html"><span>Next project<br><strong>Waterproof-Transparent Cylinder</strong></span><span aria-hidden="true">→</span></a>
+			</div>
+		</main>
+		<footer><div class="wrap"><span>© 2026 Zsigmond Kapornai</span><a href="mailto:zkapornai@gmail.com">zkapornai@gmail.com</a></div></footer>
+		<script src="js/project-gallery.js"></script>
+	</body>
+</html>

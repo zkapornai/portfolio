@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+		<meta name="color-scheme" content="light">
+		<meta name="theme-color" content="#ffffff">
+		<title>Depth of the Tactile Organs – Zsigmond Kapornai</title>
+		<meta name="description" content="Prototypes that give flat screens a sense of weight, resistance and texture.">
+		<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Outfit:wght@600;800&display=swap">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/project.css">
+	</head>
+	<body>
+		<header>
+			<nav aria-label="Main">
+				<a class="brand" href="index.html">Zsigmond Kapornai</a>
+				<ul>
+					<li><a href="projects.html" aria-current="page">Projects</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="project-cover" aria-label="Project cover">
+				<img src="assets/felt-interfaces-landing.jpg" alt="" fetchpriority="high">
+				
+				<div class="project-head cover-copy">
+				<h1 class="project-title">Depth of the tactile organs</h1>
+				<p class="project-lead">Prototypes that give flat screens a sense of weight, resistance and texture.</p>
+			</div>
+			
+				<ul class="cover-roles" aria-label="Project disciplines">
+					<li>Pseudo haptics</li>
+					<li>JavaScript</li>
+					<li>HTML</li>
+					<li>Sensory design</li>
+				</ul>
+			</section>
+			<article class="article">
+				<h3>Faux Feels</h3>
+				<p>Faux Feels explores how digital surfaces can feel rough or uneven without using physical haptic devices. The project uses changes in cursor movement to create the impression of touch.</p>
+
+				<h3>Pseudo-Haptics</h3>
+				<p>Pseudo-haptics creates touch-like sensations through visual feedback. For example, slowing down or changing the movement of a cursor can make a digital surface feel heavier, rougher, or more resistant.</p>
+				
+				<figure class="project-sketch">
+					<iframe src="psuedohaptics/index.html" title="Interactive pseudo-haptics sketch: drag the orange ball across the hexagonal surface" loading="lazy"></iframe>
+					<figcaption>Drag the orange ball across the surface to feel the bumps push back. Press H to change the surface.</figcaption>
+				</figure>
+				
+				<p> The prototype uses a hexagonal surface where cursor movement changes during interaction. The aim is to create a subtle, uneven feeling through delays and changes in movement, rather than obvious animations.</p>
+				<h3>4. Demonstration and Reflection</h3>
+				<p>The video shows how the cursor responds when moving across the surface. The main challenge is making the movement feel like resistance rather than a visual glitch. Further development could explore different levels of roughness and test how users perceive the effect. </p>
+			</article>
+			<div class="wrap">
+				<a class="next-project" href="cuttingEdge.html"><span>Next project<br><strong>Cutting Edge</strong></span><span aria-hidden="true">→</span></a>
+			</div>
+		</main>
+		<footer><div class="wrap"><span>© 2026 Zsigmond Kapornai</span><a href="mailto:zkapornai@gmail.com">zkapornai@gmail.com</a></div></footer>
+		<script src="js/project-gallery.js"></script>
+	</body>
+</html>

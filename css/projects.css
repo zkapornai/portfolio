@@ -1,0 +1,194 @@
+/* Projects page: 4-column card grid */
+.page {
+	position: relative;
+	isolation: isolate;
+}
+
+.page::before {
+	position: absolute;
+	z-index: -1;
+	inset: 2% -8% 8%;
+	border-radius: 48%;
+	background:
+		radial-gradient(ellipse at var(--glow-x, 76%) var(--glow-y, 20%), rgba(173, 190, 159, .4), transparent 38%),
+		radial-gradient(ellipse at 33% 38%, rgba(229, 232, 226, .72), transparent 54%),
+		repeating-linear-gradient(0deg, transparent 0 39px, rgba(63, 106, 56, .035) 40px),
+		repeating-linear-gradient(90deg, transparent 0 39px, rgba(63, 106, 56, .035) 40px);
+	filter: blur(.2px);
+	mask-image: radial-gradient(ellipse, #000 35%, transparent 76%);
+	content: "";
+	pointer-events: none;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 12px;
+	margin-top: clamp(32px, 6vh, 64px);
+}
+
+.card {
+	position: relative;
+	display: block;
+	aspect-ratio: 4 / 5;
+	border-radius: 20px;
+	overflow: hidden;
+	background: var(--s2);
+	isolation: isolate;
+}
+
+.card .film {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card .art {
+	transition: transform .8s cubic-bezier(.2, .7, .2, 1);
+}
+
+.card:hover .art:not(video) {
+	transform: scale(1.05);
+}
+
+.card::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: var(--ink);
+	opacity: 0;
+	transition: opacity .35s;
+	z-index: 1;
+}
+
+.card:hover::after,
+.card:focus-visible::after {
+	opacity: .32;
+}
+
+.name,
+.go {
+	position: absolute;
+	top: 14px;
+	z-index: 2;
+	background: rgba(255, 255, 255, .9);
+	transition: background .3s, color .3s;
+}
+
+.name {
+	left: 14px;
+	max-width: calc(100% - 68px);
+	padding: 8px 14px;
+	border-radius: 999px;
+	font-size: .88rem;
+	font-weight: 600;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.go {
+	right: 14px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+}
+
+.card:hover .name,
+.card:focus-visible .name {
+	background: var(--ink);
+	color: #fff;
+}
+
+.card:hover .go,
+.card:focus-visible .go {
+	background: var(--g);
+	color: #fff;
+}
+
+.roles {
+	position: absolute;
+	left: 14px;
+	right: 14px;
+	bottom: 14px;
+	z-index: 2;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.roles b {
+	font-weight: 500;
+	font-size: .8rem;
+	padding: 7px 12px;
+	border-radius: 999px;
+	background: rgba(240, 242, 238, .96);
+	opacity: 0;
+	transform: translateY(10px);
+	transition: opacity .35s, transform .35s;
+}
+
+.roles b:nth-child(2) {
+	transition-delay: .04s;
+}
+
+.roles b:nth-child(3) {
+	transition-delay: .08s;
+}
+
+.card:hover .roles b,
+.card:focus-visible .roles b {
+	opacity: 1;
+	transform: none;
+}
+
+@media(max-width: 1000px) {
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media(max-width: 640px) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 8px;
+	}
+
+	.card {
+		border-radius: 16px;
+	}
+
+	.name {
+		top: 10px;
+		left: 10px;
+		font-size: .78rem;
+		padding: 6px 11px;
+		max-width: calc(100% - 52px);
+	}
+
+	.go {
+		top: 10px;
+		right: 10px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.roles {
+		left: 10px;
+		right: 10px;
+		bottom: 10px;
+	}
+
+	.roles b {
+		font-size: .72rem;
+		padding: 5px 9px;
+	}
+
+	.roles b:nth-child(n+3) {
+		display: none;
+	}
+}

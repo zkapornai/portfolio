@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Triangle bumps</title>
+</head>
+
+<body>
+  <!-- Optional. If ixfx is found through this map, script.js uses its loop; if not (for example
+       after moving the folder) it falls back to requestAnimationFrame and still works.
+       Point it at your ixfx folder if you want ixfx used. -->
+
+  <script type="importmap">{ "imports": { "@ixfx":"./ixfx/core.js", "@ixfx/": "./ixfx/" } }</script>
+
+  <style>
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      background: white;
+      touch-action: none;
+      overscroll-behavior: none;
+      user-select: none;
+    }
+
+    #grid {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    /* One bump. Size and position are set from script.js.
+       The look is chosen by data-look on #grid (press H to cycle) */
+    .bump {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    #grid[data-look="hexagons"] .bump {
+      background: var(--hex-colour, #000);
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+
+    #grid[data-look="circles"] .bump {
+      background: var(--bump-gradient);
+    }
+
+    #grid[data-look="hidden"] {
+      visibility: hidden;
+    }
+
+    /* The rope is stretched and rotated between the ball and the cursor */
+    #rope {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 2px;
+      margin-top: -1px;
+      background: #f69936;
+      transform-origin: 0 50%;
+      pointer-events: none;
+      display: none;
+    }
+
+    #ball {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      background: #f69936;
+      cursor: grab;
+    }
+
+    #ball.dragging {
+      cursor: grabbing;
+    }
+  </style>
+
+  <div id="grid"></div>
+  <div id="rope"></div>
+  <div id="ball"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
