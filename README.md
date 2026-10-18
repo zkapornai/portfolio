@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio site
 
 A small static site: plain HTML, CSS and JavaScript. No build step.
@@ -45,3 +46,7 @@ All paths are relative, so the site also works from a sub-folder URL and when op
 ## External resources
 
 - **Fonts** (Outfit and Figtree) are loaded from Google Fonts. They can be self-hosted if you prefer.
+=======
+# portfolio
+Interaction design portfolio showcasing my projects in UI/UX design, creative coding, prototyping, and interactive experiences.
+>>>>>>> 95c725d69b115fc5eb342dbd2762b952b640b825
