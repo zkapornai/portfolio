@@ -216,11 +216,11 @@
 }
 
 .story-images {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	align-items: start;
-	gap: clamp(12px, 2vw, 24px);
-	margin-top: 24px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 24px;
+    margin-top: 24px;
 }
 
 .story-images .story-figure {
@@ -232,9 +232,9 @@
 }
 
 .story-images .story-figure:only-child {
-	grid-column: 1 / -1;
-	width: min(100%, 760px);
-	justify-self: center;
+    grid-column: auto;
+    width: 100%;
+    justify-self: stretch;
 }
 
 .story-figure img {
@@ -409,5 +409,97 @@
 	.story-figure img {
 		height: clamp(130px, 36vw, 220px);
 		border-radius: 10px;
+	}
+}
+
+/* Align images with the full text container */
+.project-story {
+    width: min(calc(100% - 32px), 680px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story-row,
+.story-copy,
+.story-images {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.story-copy p {
+    max-width: 46ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.story-images .story-figure,
+.story-images .story-figure:only-child {
+    width: 100%;
+    min-width: 0;
+    grid-column: auto;
+    justify-self: stretch;
+}
+
+.story-figure img {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Keep project images aligned with the text edges */
+
+.project-story .story-copy,
+.project-story .story-images {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 46ch;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: clamp(1.06rem, 1.6vw, 1.18rem);
+}
+
+.project-story .story-copy p {
+	max-width: none;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.project-story .story-images {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 12px;
+	margin-top: 24px;
+}
+
+.project-story .story-images .story-figure {
+	width: 100%;
+	min-width: 0;
+	margin: 0;
+}
+
+.project-story .story-images .story-figure img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: clamp(170px, 28vw, 360px);
+	object-fit: cover;
+}
+
+@media (max-width: 640px) {
+	.project-story .story-copy,
+	.project-story .story-images {
+		width: 100%;
+	}
+
+	.project-story .story-images {
+		grid-template-columns: 1fr;
+		gap: 16px;
 	}
 }

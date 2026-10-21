@@ -44,9 +44,10 @@ const PROJECTS = [
     href: 'cylinder.html'
   },
   {
-    name: 'Tiny Instruments',
+    name: 'Reminder - Doro Company',
     roles: ['Physical Computing', 'Sound Design', 'Prototyping'],
     desc: 'Small interactive objects that turn simple gestures into playful sound.',
+    img:  'assets/doro.png',
     href: 'tiny-instruments.html'
   },
   {
@@ -55,12 +56,7 @@ const PROJECTS = [
     desc: 'A browser-based exploration of movement, form and spatial interaction.',
     href: 'orbit.html'
   },
-  {
-    name: 'Paper Weather',
-    roles: ['UI Design', 'Data Visualisation', 'Front-end'],
-    desc: 'A visual interface that gives changing weather data a softer, more human feel.',
-    href: 'paper-weather.html'
-  },
+
   {
     name: 'Quiet Hours',
     roles: ['App Design', 'Sound Design'],
